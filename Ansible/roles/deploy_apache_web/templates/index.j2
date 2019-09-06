@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VladBAsyk</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="поиск, интернет, Влад, Басык">
+        <meta name="description" content="Описание сайта в поисковике">
+        <link rel="stylesheet" href="style-hello.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    </head>
+    
+    <body>      
+        <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+          <header class="mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+              <!-- Title -->
+              <span class="mdl-layout-title">Сайт ОЧЕМ это сервер {{ owner }}<br>
+                Server Hostname: {{ ansible_hostname }}<br>
+                Server OS Family: {{ ansible_os_family }}<br>
+                Server ip: {{ ansible_default_ipv4.address }}<br>  
+              </span>
+              <!-- Add spacer, to align navigation to the right -->
+              <div class="mdl-layout-spacer"></div>
+              <!-- Navigation -->
+              <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">1</a>
+                <a class="mdl-navigation__link" href="">2</a>
+                <a class="mdl-navigation__link" href="">3</a>
+                <a class="mdl-navigation__link" href="">4</a>
+              </nav>
+            </div>
+          </header>
+          <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Title</span>
+            <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="">1</a>
+              <a class="mdl-navigation__link" href="">2</a>
+              <a class="mdl-navigation__link" href="">3</a>
+              <a class="mdl-navigation__link" href="">4</a>
+            </nav>
+          </div>
+
+           <div id="calculator" class="calculator">
+            <div id="cal_out" class="cal_out"></div>
+            <hr>
+            <div id="cal_input" class="cal_input">
+              <button id="in_sign" class="in_procent"><b>%</b></button>
+              <button id="in_sign" class="in_koren"><b>√</b></button>
+              <button id="in_sign" class="in_kvadrat"><b>x<sup>2</sup></b></button>
+              <button id="in_sign" class="in_1x"><b>1/x</b></button>
+              <button id="in_sign" class="in_CE"> <b>CE</b></button>
+              <button id="in_sign" class="in_C"><b>C</b></button>
+              <button id="in_sign" class="in_del"><b>Del</b></button>
+              <button id="in_sign" class="in_division"><b>÷</b></button>
+              <button id="in_number" class="in_7">7</button>
+              <button id="in_number" class="in_8">8</button>
+              <button id="in_number" class="in_9">9</button>
+              <button id="in_sign" class="in_multiplic"><b>X</b></button>
+              <button id="in_number" class="in_4">4</button>
+              <button id="in_number" class="in_5">5</button>
+              <button id="in_number" class="in_6">6</button>
+              <button id="in_sign" class="in_minus"><b>-</b></button>
+              <button id="in_number" class="in_1">1</button>
+              <button id="in_number" class="in_2">2</button>
+              <button id="in_number" class="in_3">3</button>
+              <button id="in_sign" class="in_plus"><b>+</b></button>
+              <button id="in_sign" class="in_plmin"><b>±</b></button>
+              <button id="in_number" class="in_0">0</button>
+              <button id="in_sign" class="in_comma"><b>,</b></button>
+              <button id="in_sign" class="in_equally"><b>=</b></button>
+            </div>
+           </div>
+
+            <div id="com_input" class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__supporting-text">
+                <form name="com">
+                <label><p>Ваш комментарий:</p><textarea wrap="soft | hard" type="text" rows="3" name="com"></textarea></label>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                  Отправить
+                </button>
+                </form>
+              </div>
+            </div>
+
+            <div id="com_output" class="com_output">
+                <!-- <div id="com_title" class="com_title"></div>
+                <div id="com_message" class="com_message"></div> -->
+            </div>
+
+          </div>
+          </main>
+        </div>
+    <script src="script-hell.js"></script>
+    </body>
+</html>

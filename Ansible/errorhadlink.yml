@@ -1,0 +1,28 @@
+---
+- name: Lesson 19
+  hosts: all
+  become: yes
+  any_errors_fatal: true
+
+  tasks:
+  - name: Install tree
+    apt: name=tree state=latest
+    ignore_errors: yes
+    tags: install
+
+  - name: Remove tree
+    apt: name=tree state=absent
+    ignore_errors: yes
+    tags: remove
+  
+  - name: Task 2
+    shell: cat /home/ubuntu/test
+    register: results
+#    failed_when: results.rc != 0
+#    failed_when: "'wqe' in results.stdout"
+
+  - debug:
+      var: results
+
+  - name: Task 3
+    shell: echo Privet Mir!!!  

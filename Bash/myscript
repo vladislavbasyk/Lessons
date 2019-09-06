@@ -1,0 +1,6 @@
+#! /bin/bash
+echo -e "Write name: "
+read name
+echo -e "Write age: "
+read age
+echo "He is name $name and his age $age"

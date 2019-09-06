@@ -1,0 +1,22 @@
+---
+- name: Delete Web page
+  hosts: master
+  become: yes
+
+  tasks:
+  - name: Delete Apache WS for Debian
+    apt: name=apache2 state=absent
+    when: ansible_os_family == "Debian"
+
+  - name: Update packeges
+    shell: apt-get update
+    tags: update
+
+  - name: change_line
+    tags: line
+    lineinfile:
+      dest: /home/ubuntu/calico.yaml
+      regexp: '^(.*)value: "192(.*)$'
+      insertbefore: BOF
+      line: '              value: "172.168.0.0/16"'
+

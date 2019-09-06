@@ -1,0 +1,24 @@
+.plus{
+    margin: 30px 0px 0px 200px;
+}
+.window_plus {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    background: black;
+    color: rgb(37, 221, 37);
+    float: left;
+    font-weight : 100px;
+}
+
+.minus {
+    margin-top: 20%;
+    margin-left: 20%;
+    
+}
+.window_minus {
+    background-color: rgb(94, 255, 0);
+    color: red;
+    width: 2%;
+    height: 10%;
+}

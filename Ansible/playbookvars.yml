@@ -1,0 +1,36 @@
+---
+- name: VARS PALYBOOK
+  hosts: all
+  become: yes
+
+  vars:
+    message1: Hello
+    message2: World
+    secret: 123
+
+  tasks:
+  - name: Print Secret var
+    debug:
+      var:
+        secret
+  
+  - name: Print message+secret
+    debug:
+      msg: "Secret word: {{ secret }}"
+
+  - name: Vladelrc servera  
+    debug:
+      msg: "Vladelec servera {{ owner }}"
+
+  - set_fact: full_message="{{ message1 }} {{ message2 }} from {{ owner }}"
+  - debug:
+      var: full_message
+  
+  - debug:
+      var: ansible_distribution
+
+  - shell: ps aux
+    register: result
+  
+  - debug:
+      var: result.stderr_lines

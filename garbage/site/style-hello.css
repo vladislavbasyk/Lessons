@@ -1,0 +1,150 @@
+.demo-layout-transparent {
+    background: url(1.jpg)  center / cover;
+  }
+  .demo-layout-transparent .mdl-layout__header,
+  .demo-layout-transparent .mdl-layout__drawer-button {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+       your background is light. */
+       background-color: #009688;
+       color: #ffffff;
+       position: fixed;
+  }
+  .mdl-layout__header-row{
+        background-color: #009688;
+        color: #ffffff;
+        width: 99.2%; 
+  }
+
+/* style for calculator */
+.calculator{
+    margin: 80px auto;
+    width: 310px;
+    height: 420px;
+    background-color: #009688;
+}
+.calculator hr{
+    background-color: rgb(197, 196, 196);
+    min-height: 2px;
+}
+.cal_out{
+    margin: 10px auto;
+    width: 290px;
+    min-height: 50px;
+    background-color: white;
+}
+.cal_input{
+    margin: 10px auto;
+    width: 290px;
+    min-height: 390px;
+}
+
+.cal_input button{
+    margin: 1px;
+    width: 70px;
+    min-height: 50px;
+    float: left;
+}
+#in_sign{
+    background: #656565;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#656565), to(#444));
+    background: -moz-linear-gradient(#656565, #444);
+    background: linear-gradient(#656565, #444);
+    border: solid 1px #535353;
+    border-bottom: solid 3px #414141;
+    box-shadow: inset 0 0 0 1px #939393;
+    color: #fff;
+    text-shadow: 0 1px 0 #2f2f2f; 
+}
+#in_sign:hover{
+    background: #4c4c4c;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#4c4c4c), to(#565656));
+    background: -moz-linear-gradient(#4c4c4c, #565656);
+    background: linear-gradient(#4c4c4c, #565656);
+    border: solid 1px #464646;
+    border-bottom: solid 3px #414141;
+    box-shadow: inset 0 0 0 1px #818181;
+}
+#in_sign:active{
+    background: #474747;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#474747), to(#444));
+    background: -moz-linear-gradient(#474747, #444);
+    background: linear-gradient(#474747, #444);
+    border: solid 1px #2f2f2f;
+    box-shadow: inset 0 10px 15px 0 #3e3e3e;
+}
+
+#in_number{
+    background: #d1d1d1;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#d1d1d1), to(#afafaf));
+    background: -moz-linear-gradient(#d1d1d1, #afafaf);
+    background: linear-gradient(#d1d1d1, #afafaf);
+    border: solid 1px #b4b4b4;
+    border-bottom: solid 3px #878787;
+    box-shadow: inset 0 0 0 1px #e3e3e3;
+    color: #555;
+    text-shadow: 0 1px 0 #d6d6d6;
+}
+#in_number:hover{
+    background: #b7b7b7;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#b7b7b7), to(#c2c2c2));
+    background: -moz-linear-gradient(#b7b7b7, #c2c2c2);
+    background: linear-gradient(#b7b7b7, #c2c2c2);
+    border: solid 1px #a2a2a2;
+    border-bottom: solid 3px #878787;
+    box-shadow: inset 0 0 0 1px #d4d4d4;
+}
+#in_number:active{
+    background: #afafaf;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#afafaf), to(#a9a9a9));
+    background: -moz-linear-gradient(#afafaf, #a9a9a9);
+    background: linear-gradient(#afafaf, #a9a9a9);
+    border: solid 1px #757575;
+    box-shadow: inset 0 10px 15px 0 #9a9a9a; 
+}
+
+
+
+
+/* style for cooments */
+.demo-card-square.mdl-card {
+    margin: 30px auto;
+    background-color: #009688;
+    width: 400px;
+    min-height: 150px;
+  }
+
+.mdl-card__supporting-text textarea{
+    width: 350px;
+    min-height: 30px;
+}
+
+.mdl-card__supporting-text p{
+    margin: 0 0 0 10px;
+    color: white;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+.mdl-card__supporting-text button{
+    margin: 5px 0 0 240px;
+}
+
+.com_output div{
+    margin: 7px auto;
+    width: 400px;
+    min-height: 30px;
+    background-color: #009688;
+    color: white;
+}
+/* .com_title {
+    width: 370px;
+    min-height: 15px;
+    color: white;
+}
+.com_message {
+    margin: 5px 0 0 0;
+    width: 370px;
+    min-height: 30px;
+    background-color: white;
+    color: black;
+} */

@@ -1,0 +1,24 @@
+---
+- name: delegete palybook
+  hosts: all
+  become: yes
+  
+  vars:
+    MyText: "Hello frim Synesis"
+
+  tasks:
+  - name: Ping test
+    ping:
+
+  - name: Reeboot
+    shell: sleep 3 && reboot
+    async: 1
+    poll: 0
+
+  - name: Waiting servers
+    wait_for:
+        host: "{{ inventory_hostname }}"
+        state: started
+        delay: 5
+        timeout: 40
+    delegate_to: 127.0.0.1

@@ -1,0 +1,30 @@
+---
+
+ - fruits:
+    - appele
+    - orange
+    - mango
+
+ - city:
+     - Minsk
+     - Moscow
+ 
+ - vlad:
+     nick: vladislav
+     positions: noc
+     skills:
+       - ansible
+       - python
+       - pip 
+
+ - alex:
+     nick: alexander
+     positions: manager
+     skills:
+       - ansible
+       - python
+       - pip
+       - js
+       - go
+
+ - kolya: { nick: koyan, positions: admin, skills: ['network', 'killer'] } 

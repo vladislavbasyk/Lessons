@@ -1,0 +1,12 @@
+
+[ALL:children]
+master
+slave
+
+[master]
+k8s-1   ansible_host=192.168.56.11  owner=Vlad
+
+[slave]
+k8s-2   ansible_host=192.168.56.12  owner=Alex
+
+

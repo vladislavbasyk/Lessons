@@ -1,0 +1,6 @@
+
+auto d
+iface d inet dhcp
+
+auto d
+iface d inet dhcp

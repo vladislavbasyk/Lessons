@@ -1,0 +1,17 @@
+---
+- name: Includes Playbook
+  hosts: all
+  become: yes
+
+  vars:
+    mytext: "Hello Synesis"
+
+  tasks:
+  - name: ping test
+    ping:
+
+  - name: Create folders
+    include: create_folder.yml
+
+  - name: Create files
+    include: create_files.yml

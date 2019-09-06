@@ -1,0 +1,15 @@
+-rwxrwxrwx 1 ubuntu ubuntu 25 May 28 12:24 1
+total 48
+drwxr-xr-x 6 ubuntu ubuntu 4096 May 28 11:52 .
+drwxr-xr-x 5 root   root   4096 May 27 18:09 ..
+-rw------- 1 ubuntu ubuntu  407 May 28 12:13 .bash_history
+-rw-r--r-- 1 ubuntu ubuntu  220 May 27 17:56 .bash_logout
+-rw-r--r-- 1 ubuntu ubuntu 3771 May 27 17:56 .bashrc
+drwx------ 2 ubuntu ubuntu 4096 May 27 17:57 .cache
+drwx------ 3 ubuntu ubuntu 4096 May 27 17:57 .gnupg
+-rw-r--r-- 1 ubuntu ubuntu  807 May 27 17:56 .profile
+drwx------ 2 ubuntu ubuntu 4096 May 27 18:04 .ssh
+-rw-r--r-- 1 ubuntu ubuntu    0 May 27 17:59 .sudo_as_admin_successful
+drwxr-xr-x 2 ubuntu ubuntu 4096 May 27 18:00 .vim
+-rw------- 1 ubuntu ubuntu 2722 May 27 18:07 .viminfo
+-rwxrwxrwx 1 ubuntu ubuntu   25 May 28 12:24 1

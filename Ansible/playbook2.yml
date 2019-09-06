@@ -1,0 +1,11 @@
+---
+- name: Install apache2
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: Install Apache WS
+    yum: name=apache2 state=removed
+    
+  - name: Start Apche and Enable after reboot
+    service: name=apache2 state=started enabled=yes

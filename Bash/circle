@@ -1,0 +1,11 @@
+#!/bin/bash
+IFS=$'\n'
+for entry in $(cat ~/proga/bash/book/myscript)
+do
+echo "values ~"
+IFS=:
+for value in $entry
+do
+echo "$value"
+done
+done 

@@ -1,0 +1,10 @@
+#! /bin/bash
+for file in /home/vladislav.basyk/proga/bash/book/*
+do if [ -d "$file" ]
+then
+echo "$file in directory"
+elif [ -f "$file" ]
+then
+echo "$file is a file"
+fi
+done
