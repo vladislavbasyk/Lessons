@@ -16,7 +16,7 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('Jenkinsfiles/docker/toolbox') {
-                	sh 'docker build -t toolbox:latest .'
+                	sh 'docker build -t vladislavbasyk/toolbox:latest .'
                 }
             }
         }
